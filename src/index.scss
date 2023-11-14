@@ -38,6 +38,8 @@ body {
         display: flex;
         align-items: center;
         gap: 20px;
+        pointer-events: none;
+        user-select: none; 
     }
 
     &__logo{
@@ -50,6 +52,7 @@ body {
 
     &__text{
         font-family: Linefont;
+        letter-spacing: 2px;
     }
 }
 
@@ -96,6 +99,7 @@ body {
         height: 50px;
         font-weight: bold;
         user-select: none;
+        color: #ffff;
     }
 
     &__buttons{

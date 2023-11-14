@@ -49,11 +49,11 @@ function Counter(){
     }
 
     function download(){
-        const fileName = today + "-" + date.getHours()+date.getMinutes()+date.getMilliseconds();
-        const fileContent = "Tasks: " + tasks + " Tracking: " + tracking + " Calls: " + calls;
+        const fileName = today + "-" + date.getHours() + date.getMinutes() + date.getMilliseconds();
+        const fileContent = "\nTasks: " + tasks + " Tracking: " + tracking + " Calls: " + calls;
 
         let element = document.createElement('a');
-        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(fileContent));
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(today + fileContent));
         element.setAttribute('download', fileName);
         element.click();
     }
